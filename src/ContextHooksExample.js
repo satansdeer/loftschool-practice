@@ -1,6 +1,6 @@
 import React, { Component, useContext } from "react";
 
-const ThemeContext= React.createContext("");
+const ThemeContext = React.createContext("");
 
 class ContextApiProviderExample extends Component {
   state = { theme: "light" };
