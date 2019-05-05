@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import './ReduxThunkExample'
-import './ReduxSagaExample'
+// import './ReduxSagaExample'
 import * as serviceWorker from './serviceWorker';
 
 // ReactDOM.render(<R />, document.getElementById('root'));
