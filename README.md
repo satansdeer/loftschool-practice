@@ -1,10 +1,6 @@
-# Практика 26.04.19
+# Практика 05.05.19
 
-1. Lazy, динамические импорты и преимущества и кейсы для применения
-1. Middleware window.__REDUX_DEVTOOLS_EXTENSION, зачем он нужен?
-1. Вкратце про MobX.
-1. Понятие мемоизации 
-1. Когда использовать Context, когда HOC, когда propsRender, когда классический класс со state, когда хуки. Есть ли какие-то рекомендации, правила?
-1. Пример с глобальным контекстом и элементами, которые через хуки воздействуют на него.
-
-[Статья про Container/presentational компоненты](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+1. Auth Strategies
+2. Thunk vs Saga
+3. CSS in JS
+4. Testing

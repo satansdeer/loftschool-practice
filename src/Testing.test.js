@@ -44,9 +44,10 @@ describe("Cart", () => {
         it('sends items to backend', () => {
             const api = {sendItems: jest.fn()}
             const cart = new Cart(api)
-            cart.addItem('Item 1')
-            cart.addItem('Item 2')
-            cart.addItem('Item 3')
+            // cart.addItem('Item 1')
+            // cart.addItem('Item 2')
+            // cart.addItem('Item 3')
+            cart.items  = ['Item 1', 'Item 2', 'Item 2']
             cart.sendItems()
             expect(api.sendItems).toHaveBeenCalledWith(['Item 1', 'Item 2', 'Item 3'])
         })
