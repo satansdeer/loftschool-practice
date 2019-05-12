@@ -1,0 +1,36 @@
+{
+  "name": "connected-react-router-example-basic",
+  "version": "1.0.0",
+  "description": "A basic example for Connected React Router",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "webpack --mode production"
+  },
+  "author": "Supasate Choochaisri",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.4",
+    "express": "^4.16.4",
+    "react-hot-loader": "^4.3.12",
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-hot-middleware": "^2.24.3"
+  },
+  "dependencies": {
+    "connected-react-router": "^6.0.0",
+    "history": "^4.7.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1"
+  }
+}
