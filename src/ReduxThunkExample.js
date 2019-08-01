@@ -9,6 +9,19 @@ function sendCart() {
   };
 }
 
+function todos(state = { todos :[] }, action) {
+  switch (action.type) {
+  case "ADD__TODO":
+    return {...state,
+      todos: [...state.todos, {
+        text: action.text,
+      }]
+  }
+  default:
+    return state;
+  }
+}
+
 const reducer = (state = { cart: [] }, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
