@@ -16,3 +16,13 @@ code {
 .error {
   border-color: #ff0000
 }
+
+#upvote.active {
+  background: orangered;
+  color: white;
+}
+
+#downvote.active {
+  background: rgb(119, 119, 236);
+  color: white;
+}

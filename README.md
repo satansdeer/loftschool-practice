@@ -1,8 +1,15 @@
-# Практика 05.05.19
+# Практика 02.08.19
 
-1. Auth Strategies
-2. Thunk vs Saga
-3. CSS in JS
-4. Testing
+* Service Workers
+* В чём выгода рендера React
+* Полиморфизм компонентов
+* Hooks
+    * Hooks Intro
+    * Кастомные Hooks 
+    * Как React связывает хуки с компонентами
 
-[The Rspec Book](https://pragprog.com/book/achbd/the-rspec-book)
+## VSCode React Tools
+
+https://github.com/tonsky/FiraCode - шрифт с лигатурами
+npm intelisense
+path intelisense
