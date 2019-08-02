@@ -2,23 +2,25 @@ import React, { Component, useState } from "react";
 
 // ------- Hook example
 
-// function useCounter({ initialState }) {
-//   const [count, setCount] = useState(initialState);
-//   const increment = () => setCount(count + 1);
-//   const decrement = () => setCount(count - 1);
-//   return [count, { increment, decrement }];
-// }
+function useCounter({ initialState }) {
+  const [count, setCount] = useState(initialState);
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
+  return [count, { increment, decrement }];
+}
 
-// function App() {
-//   const [myCount, { increment, decrement }] = useCounter({ initialState: 0 });
-//   return (
-//     <div>
-//       <p>{myCount}</p>
-//       <button onClick={increment}>Increment</button>
-//       <button onClick={decrement}>Decrement</button>
-//     </div>
-//   );
-// }
+function App() {
+  if(true){
+    const [myCount, { increment, decrement }] = useCounter({ initialState: 0 });
+  }
+  return (
+    <div>
+      <p>{myCount}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </div>
+  );
+}
 
 // export default App
 
