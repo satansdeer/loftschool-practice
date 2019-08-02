@@ -6,10 +6,5 @@
 * Hooks
     * Hooks Intro
     * Кастомные Hooks 
-    * Как React связывает хуки с компонентами
-
-## VSCode React Tools
-
-https://github.com/tonsky/FiraCode - шрифт с лигатурами
-npm intelisense
-path intelisense
+    * [Как React связывает хуки с компонентами](https://medium.com/the-guild/under-the-hood-of-reacts-hooks-system-eb59638c9dba)
+* VSCode React Tools
