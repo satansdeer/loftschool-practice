@@ -1,14 +1,50 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-// import './vanilla'
-import {Counter} from './Counter'
-// import {App} from './ComponentsPolymorphism'
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import { exampleIIHOC } from "./ExampleHOC";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 
-ReactDOM.render(<Counter />, document.getElementById('root'));
+/*
+    index.js
+*/
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-// serviceWorker.register();
+import { Button } from "./Components/Button/Button";
+import { Input, Card } from "./Components";
+import { RoutingExample } from "./RoutingExample";
+
+// const Example = () => (
+//   <>
+//     <Input />
+//     <Card />
+//     <Button />
+//   </>
+// );
+
+// ReactDOM.render(<Example />, document.getElementById("root"));
+
+/*
+
+    HOCs
+
+*/
+
+// const WrappedExample = exampleIIHOC(Example)
+
+// const SecondLevel = () => <div>Second Level</div>
+
+// const FirstLevel = () => <SecondLevel />
+
+// class ClassExample extends React.Component {
+//   render() {
+//     return (
+//       <>
+//         <button>First level button</button>
+//         <FirstLevel />
+//       </>
+//     );
+//   }
+// }
+//  const WrappedExample = exampleIIHOC(ClassExample)
+
+// ------ Routing example
+
+ReactDOM.render(<Router ><RoutingExample/></Router>, document.getElementById("root"));

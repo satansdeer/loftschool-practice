@@ -1,10 +1,9 @@
-# Практика 02.08.19
+# Практика 09.08.19
 
-* Service Workers
-* В чём выгода рендера React
-* Полиморфизм компонентов
-* Hooks
-    * Hooks Intro
-    * Кастомные Hooks 
-    * [Как React связывает хуки с компонентами](https://medium.com/the-guild/under-the-hood-of-reacts-hooks-system-eb59638c9dba)
-* VSCode React Tools
+* index.js
+* Context
+* HOC + iiHOC
+* Debugging tests
+* Организация кода в компонентах LC + hooks
+* Сложный роутинг
+* React + webpack вручную
