@@ -1,15 +1,13 @@
 import React from "react";
-import { exampleIIHOC } from "./ExampleHOC";
+// import { exampleIIHOC } from "./ExampleHOC";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router} from "react-router-dom";
 
-/*
-    index.js
-*/
+// /*
+//     index.js
+// */
 
-import { Button } from "./Components/Button/Button";
-import { Input, Card } from "./Components";
-import { RoutingExample } from "./RoutingExample";
+// import { Button } from "./Components/Button";
+// import { Input, Card } from "./Components";
 
 // const Example = () => (
 //   <>
@@ -27,24 +25,37 @@ import { RoutingExample } from "./RoutingExample";
 
 */
 
-// const WrappedExample = exampleIIHOC(Example)
+// const WrappedExample = exampleIIHOC(Example);
 
-// const SecondLevel = () => <div>Second Level</div>
+// // const SecondLevel = () => <div>Second Level</div>;
 
-// const FirstLevel = () => <SecondLevel />
+// // const FirstLevel = () => <SecondLevel />;
 
-// class ClassExample extends React.Component {
-//   render() {
-//     return (
-//       <>
-//         <button>First level button</button>
-//         <FirstLevel />
-//       </>
-//     );
-//   }
-// }
-//  const WrappedExample = exampleIIHOC(ClassExample)
+// // class ClassExample extends React.Component {
+// //   render() {
+// //     return (
+// //       <>
+// //         <button>First level button</button>
+// //         <FirstLevel />
+// //       </>
+// //     );
+// //   }
+// // }
+// const WrappedExample = exampleIIHOC(ClassExample);
+// ReactDOM.render(<WrappedExample />, document.getElementById("root"));
+
+// --- Context
+
+// import ClassicContextExample from './ClassicContextExample'
+// import ContextHooksExample from './ContextHooksExample'
+
+//  ReactDOM.render(<ClassicContextExample />, document.getElementById("root"));
+
+// ---
 
 // ------ Routing example
+
+import { BrowserRouter as Router} from "react-router-dom";
+import { RoutingExample } from "./RoutingExample";
 
 ReactDOM.render(<Router ><RoutingExample/></Router>, document.getElementById("root"));
