@@ -1,9 +1,11 @@
-# Практика 09.08.19
+# Практика 16.08.19
 
-* index.js
-* Context
-* HOC + iiHOC
-* Debugging tests
-* Организация кода в компонентах LC + hooks
-* Сложный роутинг
-* React + webpack вручную
+* Сайты на React
+* State
+* Саги и сложные запросы
+* Redux/Saga/Mobx
+* Redux vs useReducer
+* Profiling
+
+[Planning Poker](https://github.com/satansdeer/planning-poker)
+[2048](https://github.com/dex157/2048-youtube)
