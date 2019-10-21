@@ -14,27 +14,6 @@ const iter = gen();
 iter.next(1)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /// Template strings
 
 function logText(text){
