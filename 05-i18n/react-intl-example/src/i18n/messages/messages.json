@@ -1,0 +1,12 @@
+[
+  {
+    "id": "add.edit",
+    "defaultMessage": "Edit {code} and save to reload.",
+    "filepath": "src/App.js"
+  },
+  {
+    "id": "app.learn",
+    "defaultMessage": "Learn React",
+    "filepath": "src/App.js"
+  }
+]
