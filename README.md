@@ -1,11 +1,9 @@
-# 08.11.19
+# 15.11.19
 
-* Redux + hooks
-    https://react-redux.js.org/next/api/hooks
-
-* Redux vs hooks
-* Testing complex components (no-shallow)
-    https://github.com/testing-library/react-hooks-testing-library
-* SSR
-* i18n
-* Optimising list
+* Testing components
+* Testing hooks
+* Testing reducers
+* Testing selectors
+* Testing sagas
+* Cookie auth
+* Token auth
