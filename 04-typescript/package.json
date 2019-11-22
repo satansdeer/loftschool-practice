@@ -1,0 +1,36 @@
+{
+  "name": "counter-using-redux-with-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@types/react-redux": "7.1.1",
+    "@types/redux-logger": "3.0.7",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-redux": "7.1.0",
+    "react-scripts": "3.0.1",
+    "redux": "4.0.4",
+    "redux-logger": "3.0.6",
+    "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/react": "16.7.22",
+    "@types/react-dom": "16.0.11",
+    "@types/react-redux": "7.0.1",
+    "@types/redux-logger": "3.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
