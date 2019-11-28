@@ -1,0 +1,82 @@
+version: 2
+
+jobs:
+  build:
+    working_directory: ~/app
+    docker:
+      - image: cypress/base:8
+        environment:
+          TERM: xterm
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - yarn-packages-v12-{{ checksum "yarn.lock" }}
+            - yarn-packages-v12-
+
+      - run:
+          name: Install Dependencies
+          command: |
+            yarn install
+            yarn autoclean --force
+
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-v12-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/Cypress
+            - node_modules
+
+      - run:
+          name: Run linters
+          command: yarn run lint
+
+      - run:
+          name: Start background app
+          command: |
+            if [[ -f ./cypress/integration/homework.spec.js ]] && [[ -s ./cypress/integration/homework.spec.js ]]
+              then yarn start
+            fi
+          background: true
+
+      - run:
+          name: Cypress tests
+          command: |
+            if [[ -f ./cypress/integration/homework.spec.js ]] && [[ -s ./cypress/integration/homework.spec.js ]]
+              then yarn run cypress:run
+            fi
+
+      - run:
+          name: Set PR number
+          command: |
+            echo 'export CIRCLE_PR_NUMBER="${CIRCLE_PR_NUMBER:-${CIRCLE_PULL_REQUEST##*/}}"' >> $BASH_ENV
+            source $BASH_ENV
+            echo $CIRCLE_PR_NUMBER
+
+      - run:
+          name: Build app
+          command: |
+            if [[ $CIRCLE_PR_NUMBER ]]
+              then yarn build
+            fi
+
+      - run:
+          name: Remove old build
+          command: |
+            if [[ $CIRCLE_PR_NUMBER ]]
+              then ssh -o StrictHostKeyChecking=no root@51.15.83.43 rm -rf /var/www/sep-pr-$CIRCLE_PR_NUMBER
+            fi
+
+      - run:
+          name: Copy new build
+          command: |
+            if [[ $CIRCLE_PR_NUMBER ]]
+              then scp -v -o StrictHostKeyChecking=no -r build root@51.15.83.43:/var/www/sep-pr-$CIRCLE_PR_NUMBER
+            fi
+
+      - run:
+          name: Create dns zone
+          command: |
+            if [[ $CIRCLE_PR_NUMBER ]]
+              then ssh -o StrictHostKeyChecking=no root@51.15.83.43 "/var/www/setup-server/index.js --address sep-pr-$CIRCLE_PR_NUMBER"
+            fi

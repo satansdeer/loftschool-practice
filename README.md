@@ -5,5 +5,4 @@
 * Testing reducers
 * Testing selectors
 * Testing sagas
-* Cookie auth
-* Token auth
+  * Главный момент - в файле `sagas-whole.test.js` используется `recordSaga`
