@@ -3,7 +3,7 @@ import { selectAuthenticated } from "./loginSelector";
 describe("Login Selectors", () => {
   describe("selectAuthenticated", () => {
     it("should return login.authenticated as boolean", () => {
-      mockState = {
+      const mockState = {
         login: {
           authenticated: false,
           authenticating: false
