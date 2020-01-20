@@ -1,15 +1,15 @@
 class FakeStateExample {
   state = { count: 0 };
 
-  setState = (newState) => {
-      this.state = newState;
-  }
-
-//   setState = newState => {
-//     setTimeout(() => {
+//   setState = (newState) => {
 //       this.state = newState;
-//     }, 0);
-//   };
+//   }
+
+  setState = newState => {
+    setTimeout(() => {
+      this.state = newState;
+    }, 0);
+  };
 
   constructor() {
     this.setState({ count: this.state.count + 1 });
@@ -21,5 +21,5 @@ class FakeStateExample {
 }
 
 console.log("Init");
-new FakeStateExample();
+const example = new FakeStateExample();
 console.log("End");
