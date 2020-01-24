@@ -17,7 +17,7 @@ function RedirectPage() {
 function App() {
   return (
     <>
-    {/* <Redirect to="https://google.com"/> */}
+    <Redirect to="https://google.com"/>
     <Link to="/home">Home</Link>
     <Link to="/about">About</Link>
     <Link to="/redirect">Redirect</Link>

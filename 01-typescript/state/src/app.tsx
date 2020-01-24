@@ -5,7 +5,7 @@ import { NameEditComponent } from "./nameEdit";
 export const App = () => {
   const [name, setName] = React.useState("initialName");
 
-  const setUsernameState = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const setUsernameState = (event: React.ChangeEvent<MouseEvent>) => {
     setName(event.target.value);
   };
 

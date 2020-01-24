@@ -26,7 +26,7 @@ function App() {
     return () => {
       // ComponentWillUnmount
     }
-  }, [])
+  }, []) // dependencies
 
   return (
     <>Functional component</>
