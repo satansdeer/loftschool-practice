@@ -29,6 +29,8 @@
     * Should you test hight level components (App.js e.t.c)
 * Controlled form hooks
 * Security of React applications
+    * https://github.com/WebGoat/WebGoat
+    * https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A7-Cross-Site_Scripting_(XSS).html
 * Animation between routes with both pages visible
 * Debugging using react dev tools and redux dev tools
     * https://github.com/LogRocket/redux-logger#readme
