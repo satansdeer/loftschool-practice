@@ -13,6 +13,8 @@
         * Using Hooks in Redux
             * https://react-redux.js.org/next/api/hooks
     * Testing Routing
+    * Router docs
+        * https://reacttraining.com/react-router/web/guides/quick-start
 * Testing
     * Don't test what you don't own
     * Don't mock system under test
@@ -28,3 +30,6 @@
 
 * 0Auth
     * https://auth0.com/docs/quickstart/spa/react
+
+* CSRF Security Cheatsheet
+    * https://owasp.org/www-project-cheat-sheets/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
