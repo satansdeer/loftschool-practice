@@ -16,6 +16,7 @@ describe("App", () => {
       // Why async https://react-hook-form.com/faqs#TestingReactHookForm
       await act(async () => {
         const ageInput = getByTestId(container, "age");
+        // important to use input and not change event
         fireEvent.input(ageInput, { target: { value: "test" } });
 
         const submitButton = getByText(container, "Submit");

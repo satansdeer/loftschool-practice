@@ -15,21 +15,37 @@ const SignupSchema = yup.object().shape({
   website: yup.string().url()
 });
 
+const FirstNameInputContainer = ({ id, error, label, regRef, name, type }) => {
+  return (
+    <>
+      <label htmlFor={id}>{label}</label>
+      <input id={id} type={type} name={name} ref={regRef} />
+      {error && <p>{error.message}</p>}
+    </>
+  );
+};
+
 const App = () => {
-  const { register, handleSubmit, errors } = useForm({
+  const { register, handleSubmit, errors, getValues } = useForm({
     validationSchema: SignupSchema
   });
+  const [values, setValues] = React.useState(null)
   const onSubmit = data => {
-    submitData(data)
+    submitData(data);
   };
+
+  console.log(values)
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div>
-        <label>First Name</label>
-        <input type="text" name="firstName" ref={register} />
-        {errors.firstName && <p>{errors.firstName.message}</p>}
-      </div>
+      <FirstNameInputContainer
+        name="firstName"
+        label="First Name"
+        type="text"
+        id="firstName"
+        error={errors.firstName}
+        regRef={register}
+      />
       <div style={{ marginBottom: 10 }}>
         <label>Last Name</label>
         <input type="text" name="lastName" ref={register} />
@@ -37,7 +53,13 @@ const App = () => {
       </div>
       <div>
         <label>Age</label>
-        <input data-testid="age" type="text" name="age" ref={register} />
+        <input
+          onChange={() => setValues(getValues)}
+          data-testid="age"
+          type="text"
+          name="age"
+          ref={register}
+        />
         {errors.age && <p>{errors.age.message}</p>}
       </div>
       <div>
@@ -48,6 +70,6 @@ const App = () => {
       <button type="submit">Submit</button>
     </form>
   );
-}
+};
 
-export default App
+export default App;
