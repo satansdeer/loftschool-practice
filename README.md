@@ -1,35 +1,55 @@
-# 2020-01-31
+# 2020-02-08 (Week 4)
 
-* Service Workers
-    * create a proxy layer between our browser and web server
-    * send push notifications
-    * do some background tasks (mostly, preloading/refreshing various stuff user might require or just perform update of already displayed stuff)
-    * Article from Addy Osmani
-        * https://medium.com/@addyosmani/progressive-web-apps-with-react-js-part-i-introduction-50679aef2b12#.sjrmmz21o
+* Localizing react apps
+    * React intl
+        * https://github.com/formatjs/react-intl
+        * https://github.com/GertjanReynaert/react-intl-translations-manager
 
-* Routing
-    * Dynamic Routing
-    * Private routes + redux
-        * Using Hooks in Redux
-            * https://react-redux.js.org/next/api/hooks
-    * Testing Routing
-    * Router docs
-        * https://reacttraining.com/react-router/web/guides/quick-start
-* Testing
-    * Don't test what you don't own
-    * Don't mock system under test
-    * Don't mock what you don't own
-        * Спорно, предлагается взамен делать обёртки и тестировать их. + Тестировать интеграцию обёртки со сторонней библиотекой
-    * Testing components
-    * Testing hooks
-    * Testing reducers
-    * Testing selectors
-* Using Jest VSCode
-* Debugging tests
-* Using mocks
+    * Gettext
+        * https://github.com/Mojang/t-component
+        * https://github.com/Mojang/i18n-scripts
 
-* 0Auth
-    * https://auth0.com/docs/quickstart/spa/react
+    * React-i18next
+        * https://github.com/i18next/react-i18next
 
-* CSRF Security Cheatsheet
-    * https://owasp.org/www-project-cheat-sheets/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+* Testing asynchronous code
+    * Mocking requests
+        * Create an `api` module for requests
+        * Mock `global.fetch`
+    * Controlled promise
+
+* Why do sagas use generators?
+    * https://redux-saga.js.org/
+        * Redux Saga chooses generators over async/await
+* Can we use co with sagas
+    * `co` library https://github.com/tj/co
+
+* Testing sagas
+    https://github.com/redux-saga/redux-saga/issues/518
+
+* Multiple sagas example
+    * http://react-github-follower-list.surge.sh/
+
+* Sagas most common methods
+    * fork https://redux-saga.js.org/docs/api/#forkfn-args
+    * takeEvery https://redux-saga.js.org/docs/api/#takeeverypattern-saga-args
+    * call https://redux-saga.js.org/docs/api/#callfn-args
+    * put https://redux-saga.js.org/docs/api/#putaction
+    * select https://redux-saga.js.org/docs/api/#selectselector-args
+
+* combineReducers
+    * https://redux.js.org/api/combinereducers/#combinereducersreducers
+
+* Form validation example
+
+* Tricky testing examples
+    * Testing with redux
+        * https://testing-library.com/docs/react-testing-library/setup#custom-render
+    * Nested components (with dependencies)
+        * Jest mock component
+* Lerna
+    * https://github.com/lerna/lerna
+    * Bump versions
+    * Install dependencies for all projects
+    * Run commands for every project
+    * Publish multiple packages
