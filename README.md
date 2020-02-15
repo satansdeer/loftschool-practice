@@ -1,56 +1,35 @@
-# 2020-02-08 (Week 4)
+# 2020-02-15 (Week 5)
 
-* combineReducers
-    * https://redux.js.org/api/combinereducers/#combinereducersreducers
+* typescript + react
+    * types vs interfaces
+        * https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types
+        * Language specification
+            * https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#3.70
+    * Стоит ли использовать `propTypes`.
+        * Имеет смысл если вы хотите предоставить рантайм типы JS консьюмерам
+* mobx
+    * https://mobx.js.org/README.html
+    * decorators
+        * typescript decorators
+            * https://www.typescriptlang.org/docs/handbook/decorators.html
+        * JS proposal
+            * https://github.com/tc39/proposal-decorators
+    * mobx-react-lite
+        * https://github.com/mobxjs/mobx-react-lite
+* storybook
+    * https://storybook.js.org/docs/guides/guide-react/
+* preprocessors
+    * https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor
+    * https://github.com/postcss/postcss
+    * CRA styles
+        * https://create-react-app.dev/docs/adding-a-sass-stylesheet/
+    * styled-components
+        * https://styled-components.com/
+        * preprocessor
+            * https://stylis.js.org/
+* gitlab
+    * https://gitlab.com/help/ci/quick_start/README
+    * https://gitlab.com/satansdeer/gitlab-ci-example
 
-* Why do sagas use generators?
-    * https://redux-saga.js.org/
-        * Redux Saga chooses generators over async/await
-* Can we use co with sagas
-    * `co` library https://github.com/tj/co
-
-* Multiple sagas example
-    * http://react-github-follower-list.surge.sh/
-
-* Testing sagas
-    https://github.com/redux-saga/redux-saga/issues/518
-
-* Sagas most common methods
-    * fork https://redux-saga.js.org/docs/api/#forkfn-args
-    * takeEvery https://redux-saga.js.org/docs/api/#takeeverypattern-saga-args
-    * call https://redux-saga.js.org/docs/api/#callfn-args
-    * put https://redux-saga.js.org/docs/api/#putaction
-    * select https://redux-saga.js.org/docs/api/#selectselector-args
-
-* Testing asynchronous code
-    * Mocking requests
-        * Create an `api` module for requests
-        * Mock `global.fetch`
-    * Controlled promise
-
-* Form validation example
-
-* Tricky testing examples
-    * Testing with redux
-        * https://testing-library.com/docs/react-testing-library/setup#custom-render
-    * Nested components (with dependencies)
-        * Jest mock component
-
-* Localizing react apps
-    * React intl
-        * https://github.com/formatjs/react-intl
-        * https://github.com/GertjanReynaert/react-intl-translations-manager
-
-    * Gettext
-        * https://github.com/Mojang/t-component
-        * https://github.com/Mojang/i18n-scripts
-
-    * React-i18next
-        * https://github.com/i18next/react-i18next
-
-* Lerna
-    * https://github.com/lerna/lerna
-    * Bump versions
-    * Install dependencies for all projects
-    * Run commands for every project
-    * Publish multiple packages
+* TC39 proposals
+    * https://github.com/tc39/proposals

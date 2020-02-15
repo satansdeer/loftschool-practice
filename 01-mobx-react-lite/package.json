@@ -1,0 +1,35 @@
+{
+  "name": "mobx-react-lite-example",
+  "version": "1.0.0",
+  "description": "new mobx with hooks",
+  "keywords": [
+    "context-api",
+    "react",
+    "mobx-react-lite",
+    "mobx",
+    "react-hooks"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "mobx": "5.10.1",
+    "mobx-react-lite": "1.4.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,99 @@
+body {
+    background-color: #fff6f6
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+header {
+    padding: 20px 0 0 0;
+    background: white;
+    text-align: center;
+}
+
+.remove {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+#heading {
+    margin: 10px 0;
+}
+
+.main-bar {
+    padding: 20px 0;
+   background: #741d51; /* Old browsers */
+   background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+   color: white;
+}
+
+.main-bar h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#courses-list .row {
+    margin-bottom:20px;
+}
+
+.add-to-cart {
+    margin:10px 0;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+.card h4 {
+    margin-bottom: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    border-top:1px solid #aaa;;
+    padding-top: 40px;
+}
+
+#courses-list.container {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#shopping-cart td {
+    padding: 5px;
+}
+
+.price {
+    font-size: 18px;
+    margin: 15px 0;
+}
+.price span {
+    font-weight: 700;
+    font-size: 22px;
+}
