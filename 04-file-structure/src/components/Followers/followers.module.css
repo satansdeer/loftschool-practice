@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.follower {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.followerImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  object-fit: contain;
+}
+
+.followerLogin {
+  padding-left: 10px;
+}
