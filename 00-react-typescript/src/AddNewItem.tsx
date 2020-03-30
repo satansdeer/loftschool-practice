@@ -8,15 +8,15 @@ interface IAddNewItemProps {
   dark?: boolean
 }
 
-interface Point {
-  x: number
-}
-interface Point {
-  y: number
-}
+// type Point {
+//   x: number
+// }
+// type Point {
+//   y: number
+// }
 
-const p:Point = {};
-console.log(p)
+// const p:Point = {};
+// console.log(p)
 
 export const AddNewItem = ({
   onAdd,

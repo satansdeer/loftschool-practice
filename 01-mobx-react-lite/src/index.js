@@ -15,16 +15,20 @@ const First = () => {
   ));
 };
 
+
 const Second = () => {
   const store = useContext(counterContext);
 
-  return useObserver(() => (
-    <div>
+  const [products, errors, submit] = useCart()
+
+  return useObserver(() => {
+
+    return (<div>
       <h2>Count: {store.count}</h2>
       <button onClick={store.increment}>+</button>
       <button onClick={store.decrement}>-</button>
-    </div>
-  ));
+    </div>)
+  });
 };
 
 function App() {
