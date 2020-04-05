@@ -9,3 +9,7 @@
 * Conditional Rendering
 * Simple styles
   * https://andybrewer.github.io/mvp/
+* Testing
+  * https://testing-library.com/docs/react-testing-library/api
+  * https://jestjs.io/docs/en/expect#expectvalue
+  * https://github.com/testing-library/jest-dom
