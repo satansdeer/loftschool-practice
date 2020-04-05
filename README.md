@@ -7,6 +7,8 @@
 * Using State
 * Using Events
 * Conditional Rendering
+* Context
+  * https://reactjs.org/docs/context.html
 * Simple styles
   * https://andybrewer.github.io/mvp/
 * Testing
