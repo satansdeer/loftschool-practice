@@ -1,17 +1,17 @@
-# 2020-04-05 (Week 1)
+# 2020-04-12 (Week 2)
 
-* CRA
-  * public folder
-    * https://create-react-app.dev/docs/using-the-public-folder/
-* Creating Components
-* Using State
-* Using Events
-* Conditional Rendering
-* Context
-  * https://reactjs.org/docs/context.html
-* Simple styles
-  * https://andybrewer.github.io/mvp/
+* Routing
+  * Dynamic routing
+* Hooks
+  * https://reactjs.org/docs/hooks-intro.html
+  * HOCs vs Hooks vs RenderProps
 * Testing
-  * https://testing-library.com/docs/react-testing-library/api
-  * https://jestjs.io/docs/en/expect#expectvalue
-  * https://github.com/testing-library/jest-dom
+  * Router testing
+  * Debugging tests
+  * Basic components
+  * Complex components
+  * Testing Hooks
+  * Mocks
+* Webpack
+* Typescript
+* SSR
