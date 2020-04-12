@@ -39,7 +39,7 @@ const Category = ({ match }) => {
   );
 };
 
-export default RoutingExample = () => {
+export const RoutingExample = () => {
   return (
     <Switch>
       <Route path={`/categories/:catId`} component={Category} />
