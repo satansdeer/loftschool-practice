@@ -1,18 +1,26 @@
-# 2020-04-12 (Week 2)
+# 2020-04-18 (Week 3)
 
-* Routing
-  * Dynamic routing
-    * `http://localhost:3000/categories/0`
-* Hooks
-  * https://reactjs.org/docs/hooks-intro.html
-  * HOCs vs Hooks vs RenderProps
-* Testing
-  * Router testing
-  * Debugging tests
-  * Basic components
-  * Complex components
-  * Testing Hooks
-  * Mocks
-* Webpack
 * Typescript
 * SSR
+  * Razzle
+    * https://github.com/jaredpalmer/razzle
+    * `npx create-razzle-app your-app-name`
+* Testing
+  * Questions
+    * TDD in React
+    * Where to put mocks
+    * Making React application testable
+    * Testing authentictaion
+    * Using data-testid
+    * When not to write tests
+  * Router testing
+  * Testing Context
+  * Testing Reducers
+  * Testing Selectors
+* Business Logic in Redux
+  * Redux Logic
+    * https://github.com/jeffbski/redux-logic
+* Redux Toolkit
+  * https://github.com/reduxjs/redux-toolkit
+* Redux Libraries
+  * https://github.com/brillout/awesome-redux
