@@ -1,6 +1,9 @@
 # 2020-04-18 (Week 3)
 
 * Typescript
+  * http://ttendency.cs.ucl.ac.uk/projects/type_study/documents/type_study.pdf
+  * https://www.typescriptlang.org/play/
+  * https://create-react-app.dev/docs/adding-typescript/
 * SSR
   * Razzle
     * https://github.com/jaredpalmer/razzle
