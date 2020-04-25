@@ -1,0 +1,40 @@
+{
+  "name": "hw",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.1",
+    "redux-saga": "^0.16.2",
+    "reselect": "^4.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint src/**/*.js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^3.1.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "eslint-plugin-cypress": "^2.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-perf": "^2.0.9"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

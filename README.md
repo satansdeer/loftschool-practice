@@ -1,29 +1,20 @@
-# 2020-04-18 (Week 3)
+# 2020-04-25 (Week 4)
 
-* Typescript
-  * http://ttendency.cs.ucl.ac.uk/projects/type_study/documents/type_study.pdf
-  * https://www.typescriptlang.org/play/
-  * https://create-react-app.dev/docs/adding-typescript/
-* SSR
-  * Razzle
-    * https://github.com/jaredpalmer/razzle
-    * `npx create-razzle-app your-app-name`
-* Testing
-  * Questions
-    * TDD in React
-    * Where to put mocks
-    * Making React application testable
-    * Testing authentictaion
-    * Using data-testid
-    * When not to write tests
-  * Router testing
-  * Testing Context
-  * Testing Reducers
-  * Testing Selectors
-* Business Logic in Redux
-  * Redux Logic
-    * https://github.com/jeffbski/redux-logic
-* Redux Toolkit
-  * https://github.com/reduxjs/redux-toolkit
-* Redux Libraries
-  * https://github.com/brillout/awesome-redux
+* testing Sagas
+  * https://redux-saga.js.org/docs/advanced/Testing.html
+* `action.payload vs [...state, action.payload]`
+* styling
+  * css-modules vs styled-components vs ...
+  * ❌ styling by #id
+  * sass + css + styled-components стоит ли
+    * https://sass-lang.com/
+  * sass + css-modules in CRA
+    * https://create-react-app.dev/docs/adding-a-sass-stylesheet/
+  * optimize css 
+    * https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/config/webpack.config.js?source=post_page---------------------------
+    * https://github.com/NMFR/optimize-css-assets-webpack-plugin
+
+    * https://reactjs.org/blog/2018/10/23/react-v-16-6.html#reactlazy-code-splitting-with-suspense
+
+* https://youtu.be/wmEWSQDPVOw - advanced React patterns
+* https://www.youtube.com/watch?v=FD-9c4eBbFc
