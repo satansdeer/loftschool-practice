@@ -6,6 +6,17 @@
 * styling
   * css-modules vs styled-components vs ...
     * https://jdan.github.io/98.css/#window-contents
+
+    ```
+    const StyledMyPart = styled(DatePicker).attrs({
+      className: "my-css-class"
+    })`
+      &.my-css-class {
+        font-size: 60px;
+      }
+    `;
+    ```
+
   * ❌ styling by #id
   * sass + css + styled-components стоит ли
     * https://sass-lang.com/
