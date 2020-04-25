@@ -5,6 +5,7 @@
 * `action.payload vs [...state, action.payload]`
 * styling
   * css-modules vs styled-components vs ...
+    * https://jdan.github.io/98.css/#window-contents
   * ❌ styling by #id
   * sass + css + styled-components стоит ли
     * https://sass-lang.com/
