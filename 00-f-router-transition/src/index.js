@@ -16,13 +16,8 @@ import Home from './Home';
 import About from './About';
 import Error404 from './Error404';
 
-// Does the user's browser support the HTML5 history API?
-// If the user's browser doesn't support the HTML5 history API then we
-// will force full page refreshes on each page change.
-const supportsHistory = 'pushState' in window.history;
-
 const App = ({  }) => (
-  <BrowserRouter forceRefresh={!supportsHistory}>
+  <BrowserRouter>
     <div>
       <Nav />
       <main>

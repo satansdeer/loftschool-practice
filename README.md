@@ -15,8 +15,10 @@
   * page transition animation
 * e2e
   * cypress
+    * https://www.cypress.io/
   * testcafe
     * https://devexpress.github.io/testcafe/
     * `testcafe chrome 01-e2e-testcafe/example.js`
 * mobx
   * https://mobx.js.org/README.html
+  * https://github.com/mobxjs/mobx-react-lite
