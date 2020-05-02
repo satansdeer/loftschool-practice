@@ -1,0 +1,38 @@
+.container {
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  margin: 0;
+  padding: 10px;
+  width: 120px;
+}
+
+.title {
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.icon {
+  pointer-events: none;
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.childrens {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+}
+
+.controllButtons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}

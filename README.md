@@ -1,32 +1,22 @@
-# 2020-04-25 (Week 4)
+# 2020-05-02 (Week 5)
 
-* testing Sagas
-  * https://redux-saga.js.org/docs/advanced/Testing.html
-* `action.payload vs [...state, action.payload]`
-* styling
-  * css-modules vs styled-components vs ...
-    * https://jdan.github.io/98.css/#window-contents
-
-    ```
-    const StyledMyPart = styled(DatePicker).attrs({
-      className: "my-css-class"
-    })`
-      &.my-css-class {
-        font-size: 60px;
-      }
-    `;
-    ```
-
-  * ❌ styling by #id
-  * sass + css + styled-components стоит ли
-    * https://sass-lang.com/
-  * sass + css-modules in CRA
-    * https://create-react-app.dev/docs/adding-a-sass-stylesheet/
-  * optimize css 
-    * https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/config/webpack.config.js?source=post_page---------------------------
-    * https://github.com/NMFR/optimize-css-assets-webpack-plugin
-
-    * https://reactjs.org/blog/2018/10/23/react-v-16-6.html#reactlazy-code-splitting-with-suspense
-
-* https://youtu.be/wmEWSQDPVOw - advanced React patterns
-* https://www.youtube.com/watch?v=FD-9c4eBbFc
+* animations
+  * using CSS
+  * React transition group
+    * https://github.com/reactjs/react-transition-group
+  * react-animations
+    * https://github.com/FormidableLabs/react-animations
+    * https://daneden.github.io/animate.css/
+  * react-motion
+    * https://github.com/chenglou/react-motion
+    * https://github.com/bartgryszko/react-motion-example
+  * react-reveal
+    * https://www.react-reveal.com/
+  * page transition animation
+* e2e
+  * cypress
+  * testcafe
+    * https://devexpress.github.io/testcafe/
+    * `testcafe chrome 01-e2e-testcafe/example.js`
+* mobx
+  * https://mobx.js.org/README.html
