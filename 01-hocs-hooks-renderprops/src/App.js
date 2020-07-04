@@ -2,25 +2,25 @@ import React, { Component, useState } from "react";
 
 // ------- Hook example
 
-// function useCounter({ initialState }) {
-//   const [count, setCount] = useState(initialState);
-//   const increment = () => setCount(count + 1);
-//   const decrement = () => setCount(count - 1);
-//   return [count, { increment, decrement }];
-// }
+function useCounter({ initialState }) {
+  const [count, setCount] = useState(initialState);
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
+  return [count, { increment, decrement }];
+}
 
-// function App() {
-//   const [myCount, { increment, decrement }] = useCounter({ initialState: 0 });
-//   return (
-//     <div>
-//       <p>{myCount}</p>
-//       <button onClick={increment}>Increment</button>
-//       <button onClick={decrement}>Decrement</button>
-//     </div>
-//   );
-// }
+function App() {
+  const [myCount, { increment, decrement }] = useCounter({ initialState: 0 });
+  return (
+    <div>
+      <p>{myCount}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </div>
+  );
+}
 
-// export default App
+export default App
 
 // ------- Render Props Example
 
@@ -62,33 +62,33 @@ import React, { Component, useState } from "react";
 
 // ------- HOC example
 
-const withCounter = WrappedComponent => {
-  return class extends Component {
-    state = { count: 0 };
+// const withCounter = WrappedComponent => {
+//   return class extends Component {
+//     state = { count: 0 };
 
-    increment = () => {
-      this.setState({ count: this.state.count + 1 });
-    };
+//     increment = () => {
+//       this.setState({ count: this.state.count + 1 });
+//     };
 
-    decrement = () => {
-      this.setState({ count: this.state.count - 1 });
-    };
+//     decrement = () => {
+//       this.setState({ count: this.state.count - 1 });
+//     };
 
-    render() {
-      const {count} = this.state
-      return <WrappedComponent myCount={count} increment={this.increment} decrement={this.decrement}  />;
-    }
-  };
-};
+//     render() {
+//       const {count} = this.state
+//       return <WrappedComponent myCount={count} increment={this.increment} decrement={this.decrement}  />;
+//     }
+//   };
+// };
 
-function App({myCount, increment, decrement}) {
-  return (
-    <div>
-      <p>{myCount}</p>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
-    </div>
-  );
-}
+// function App({myCount, increment, decrement}) {
+//   return (
+//     <div>
+//       <p>{myCount}</p>
+//       <button onClick={increment}>Increment</button>
+//       <button onClick={decrement}>Decrement</button>
+//     </div>
+//   );
+// }
 
-export default withCounter(App)
+// export default withCounter(App)

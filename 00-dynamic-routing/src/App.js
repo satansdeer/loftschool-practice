@@ -21,7 +21,7 @@ const Category = ({ match }) => {
       {match.isExact && (
         <>
           <h1>
-            {category.title} + {String(match.isExact)}
+            {category.title}
           </h1>
           {category.subcategories.map(subCategoryId => {
             return (

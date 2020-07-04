@@ -16,6 +16,14 @@ export interface ColumnProps {
   isPreview?: boolean
 }
 
+function log<T>(value:T) {
+  console.log(value) 
+}
+
+log("Foo")
+log(1)
+log<"string">("string")
+
 const Column: React.FC<ColumnProps> = React.memo(
   ({ id, text, index, isPreview = false }) => {
     const { state, dispatch } = useItemsContext()
