@@ -1,0 +1,16 @@
+{
+    "courses": [
+        {"id":"1","title":"HTML5, CSS3 and JavaScript for beginners","author": "Ervin Howell","price":"30"},
+        {"id":"2","title":"Start Cooking today","author": "Leanne Graham","price":"35"},
+        {"id":"3","title":"Guitar for beginners","author": "Tobias Funke","price":"50"},
+        {"id":"4","title":"Lear how to save home energy","author": "George Edwards","price":"20"},
+        {"id":"5","title":"Christmas decorations with recycled products","author": "Rachel Howell","price":"40"},
+        {"id":"6","title":"Web Design for beginners","author": "Michael Lawson","price":"80"},
+        {"id":"7","title":"Electric guitar for beginners","author": "Byron Fields","price":"50"},
+        {"id":"8","title":"Build your own Music Studio","author": "Nicholas Runoltir","price":"45"},
+        {"id":"9","title":"Delicious home made cookies","author": "Glenna Reichert","price":"25"},
+        {"id":"10","title":"Modern JavaScript","author": "Kurtis Weissnat","price":"35"},
+        {"id":"11","title":"Harvest your own fruits and vegetables","author": "Chelsey Dietrich","price":"30"},
+        {"id":"12","title":"Learn to cook mexican food","author": "Clementine Bauch","price":"25"}
+    ]
+}
